@@ -63,12 +63,19 @@ str(test_subject)
 ## Transformations
  
  Gave appropriate labels to the variables in the train and test dataset from the feautres vector.
+ 
  Activity ids were replaced by their corresponding names in the datasets created from y_train.txt and y_test.txt. Also the column was labelled as 'Activity'. 
+ 
  The datasets created from train_subject.txt and test_subject.txt were given the label of 'Subject'
+ 
  Regular expression was used to restrict the training and test datasets to the columns with mean() and std().
+ 
  The columns  of subject, activity and data were combined to produce a unified dataset for both test and training.
+ 
  These restricted datasets were combined to produce the restricted merged dataset of measures of interest.
+ 
  Melt/Cast were used to find mean for subject/activity for each measure.
+ 
  The tidydata.txt was produced from the above transformations.
  
  
