@@ -60,7 +60,7 @@ str(test_subject)
 'data.frame':	2947 obs. of  1 variable:
  $ V1: int  2 2 2 2 2 2 2 2 2 2 ...
  
- ## Transformations
+## Transformations
  
  Gave appropriate labels to the variables in the train and test dataset from the feautres vector.
  Activity ids were replaced by their corresponding names in the datasets created from y_train.txt and y_test.txt. Also the column was labelled as 'Activity'. 
