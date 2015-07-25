@@ -43,18 +43,20 @@ requiredFeatures <- grep(".*mean\\(\\)|.*std\\(\\)", features)
 test_x <- test_x[,requiredFeatures]
 train_x <- train_x[,requiredFeatures]
 
-# Bind subject, activity and data
+# Bind subject, activity and data. Note without above restrictions and reassignment of _x variables a complete
+# merged dataset would become available
 testData <- cbind(as.data.table(test_subject), test_y, test_x)
 trainData <- cbind(as.data.table(train_subject), train_y, train_x)
 #merge test and train data
 mergedData <- rbind(testData, trainData)
 
 #Tidy dataset
+# First melt it into 4 columns (Subject, Activity, variable, value)
 ids       = c("Subject", "Activity")
 variables = colnames(mergedData)[3:length(colnames(mergedData))]
 meltData = melt(mergedData, id = ids, measure.vars = variables)
 
-# Apply mean using dcast function
+# Apply mean using dcast function giving wide format again
 tidyData   = dcast(meltData, Subject + Activity ~ variable, mean)
 
 write.table(tidyData, file = "./tidydata.txt", row.names = FALSE)
