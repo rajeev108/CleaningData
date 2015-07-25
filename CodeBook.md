@@ -61,6 +61,8 @@ str(test_subject)
  $ V1: int  2 2 2 2 2 2 2 2 2 2 ...
  
 ## Transformations
+
+The data set is stored in the UCI HAR Dataset/ directory.
  
  Gave appropriate labels to the variables in the train and test dataset from the feautres vector.
  
