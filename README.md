@@ -13,3 +13,4 @@ from the Samsung Galaxy S smartphone:
 The run_analysis.R script is heavily annotated and self explanatory.
 Given the inputs of the Samsung Galaxy S smartphone datasets in the working directory it creates a tidydata.txt file
 Whilst creating the merged dataset,the liberty was taken to merge only the required mean and std measures in the interest of storage efficiency. Alternatively, one could have merged the test and train data and do columns selectection later with dplyr.
+The only subtlty is that appropriate melt and cast functions are used from reshape2 package to calculate required means. 
