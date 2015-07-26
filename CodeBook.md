@@ -82,8 +82,8 @@ The data set is stored in the UCI HAR Dataset/ directory.
  
  The final tidy dataset has 180 observations (30 subjects times 6 activities each) and 66 features with subject and activity as the identifiers (180 X 68) The sample output is:
  
-``` **> str(tidyData)
-'data.frame':	180 obs. of  68 variables:**
+```str(tidyData)
+'data.frame':	180 obs. of  68 variables:
  $ Subject                    : int  1 1 1 1 1 1 2 2 2 2 ...
  $ Activity                   : Factor w/ 6 levels "LAYING","SITTING",..: 1 2 3 4 5 6 1 2 3 4 ...
  $ tBodyAcc-mean()-X          : num  0.222 0.261 0.279 0.277 0.289 ...
@@ -97,5 +97,3 @@ The data set is stored in the UCI HAR Dataset/ directory.
  $ tGravityAcc-mean()-Z       : num  0.4458 0.332 0.0135 -0.0681 -0.0621 ...
  $ tG...
  ```
- 
- 
