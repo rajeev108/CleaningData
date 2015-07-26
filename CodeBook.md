@@ -11,13 +11,13 @@ to create a tidy dataset. The original information available for the input varia
 **'activity_labels.txt'**: Six activity names.
 
 **'train/subject_train.txt'** - identifies one of the 30 subjects for each training dataset observation
-...str(train_subject)
+```str(train_subject)
 'data.frame':	7352 obs. of  1 variable:
- $ V1: int  1 1 1 1 1 1 1 1 1 1 ...
+ $ V1: int  1 1 1 1 1 1 1 1 1 1 ...```
 
 **'train/X_train.txt'**: Training set with 561 features. Each feature label avilable in features.txt
 Structure of the loaded dataset
-'''str(train_x)
+```str(train_x)
 'data.frame':	7352 obs. of  561 variables:
  $ V1  : num  0.289 0.278 0.28 0.279 0.277 ...
  $ V2  : num  -0.0203 -0.0164 -0.0195 -0.0262 -0.0166 ...
@@ -29,14 +29,14 @@ Structure of the loaded dataset
  $ V8  : num  -0.983 -0.975 -0.964 -0.983 -0.98 ...
  $ V9  : num  -0.924 -0.958 -0.977 -0.989 -0.99 ...
  $ V10 : num  -0.935 -0.943 -0.939 -0.939 -0.942 ...
- 
+ ```
 **'train/y_train.txt'**: Activity code for each observation in training dataset.
-str(train_y)
+```str(train_y)
 'data.frame':	7352 obs. of  1 variable:
- $ V1: int  5 5 5 5 5 5 5 5 5 5 ...
+ $ V1: int  5 5 5 5 5 5 5 5 5 5 ...```
  
 **'test/X_test.txt'**: Test set with 561 features. Each feature label avilable in features.txt
-Structure of the loaded dataset
+```Structure of the loaded dataset
 str(test_x)
 'data.frame':	2947 obs. of  561 variables:
  $ V1  : num  0.257 0.286 0.275 0.27 0.275 ...
@@ -49,17 +49,17 @@ str(test_x)
  $ V8  : num  -0.925 -0.968 -0.971 -0.974 -0.966 ...
  $ V9  : num  -0.674 -0.946 -0.963 -0.969 -0.977 ...
  $ V10 : num  -0.894 -0.894 -0.939 -0.939 -0.939 ...
-
+```
 **'test/y_test.txt'**: Activity code for each observation in test dataset
-str(test_y)
+```str(test_y)
 'data.frame':	2947 obs. of  1 variable:
- $ V1: int  5 5 5 5 5 5 5 5 5 5 ....
+ $ V1: int  5 5 5 5 5 5 5 5 5 5 ....```
 
 **'test/subject_test.txt'** - identifies one of the 30 subjects for each test dataset observation
-str(test_subject)
+```str(test_subject)
 'data.frame':	2947 obs. of  1 variable:
  $ V1: int  2 2 2 2 2 2 2 2 2 2 ...
- 
+``` 
 ## Transformations
 
 The data set is stored in the UCI HAR Dataset/ directory.
@@ -82,7 +82,7 @@ The data set is stored in the UCI HAR Dataset/ directory.
  
  The final tidy dataset has 180 observations (30 subjects times 6 activities each) and 66 features with subject and activity as the identifiers (180 X 68) The sample output is:
  
- **> str(tidyData)
+``` **> str(tidyData)
 'data.frame':	180 obs. of  68 variables:**
  $ Subject                    : int  1 1 1 1 1 1 2 2 2 2 ...
  $ Activity                   : Factor w/ 6 levels "LAYING","SITTING",..: 1 2 3 4 5 6 1 2 3 4 ...
@@ -96,6 +96,6 @@ The data set is stored in the UCI HAR Dataset/ directory.
  $ tGravityAcc-mean()-Y       : num  0.706 0.204 -0.273 -0.282 -0.267 ...
  $ tGravityAcc-mean()-Z       : num  0.4458 0.332 0.0135 -0.0681 -0.0621 ...
  $ tG...
- 
+ ```
  
  
