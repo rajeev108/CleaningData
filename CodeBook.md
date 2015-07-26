@@ -11,13 +11,13 @@ to create a tidy dataset. The original information available for the input varia
 'activity_labels.txt': Six activity names.
 
 'train/subject_train.txt' - identifies one of the 30 subjects for each training dataset observation
-str(train_subject)
+...str(train_subject)
 'data.frame':	7352 obs. of  1 variable:
  $ V1: int  1 1 1 1 1 1 1 1 1 1 ...
 
 'train/X_train.txt': Training set with 561 features. Each feature label avilable in features.txt
 Structure of the loaded dataset
-str(train_x)
+'''str(train_x)
 'data.frame':	7352 obs. of  561 variables:
  $ V1  : num  0.289 0.278 0.28 0.279 0.277 ...
  $ V2  : num  -0.0203 -0.0164 -0.0195 -0.0262 -0.0166 ...
