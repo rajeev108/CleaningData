@@ -5,7 +5,7 @@ to create a tidy dataset. The original information available for the input varia
 
 ## Datasets used from the original data
 
-'features.txt': List of all the 561 features in the test and train datasets.
+**'features.txt'**: List of all the 561 features in the test and train datasets.
 ('features_info.txt': Contains information about the above features/variables.)
 
 'activity_labels.txt': Six activity names.
